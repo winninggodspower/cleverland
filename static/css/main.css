@@ -5,7 +5,6 @@
     font-family: 'Poppins', sans-serif;
     --brown: rgb(132,72,64);
     --green: rgba(88,127,75,255);
-    --red: 
 }
 
 
@@ -13,8 +12,20 @@
     background-color: var(--green);
 }
 
-h2{
+.bg-brown{
+    background-color: var(--brown) !important;
+}
+
+.font-body{
+    font-size: 1.1rem;
+}
+
+header h2{
     font-family: 'Rubik Dirt', cursive;
+}
+
+h2{
+    font-family: cursive;
 }
 
 .text-brown{
@@ -33,7 +44,7 @@ h2{
 
 .mission-badge{
     --size: 50px;
-    width: var(--size);
+    width: var(--size) ;
     height: var(--size);
 }
 
@@ -41,4 +52,25 @@ h2{
     width: 340px !important;
     max-width: 100%;
     height: 400px;
+}
+
+.services-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 8px var(--green) solid;
+    transform: translateX(-10%);
+    z-index: -1;
+}
+
+.service-icon-container{
+    --size: 80px;
+    width: var(--size);
+    height: var(--size);
+}
+
+.services-htag{
+    font-size: 2.5rem !important;
+    font-weight: lighter !important;
 }
