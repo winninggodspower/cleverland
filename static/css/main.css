@@ -54,6 +54,14 @@ h2{
     height: 400px;
 }
 
+main{
+    background: url(../assets/background-img/fountaingraphic.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+    background-position:  left bottom ;
+}
+
 .services-container::after{
     content: "";
     position: absolute;
@@ -73,4 +81,9 @@ h2{
 .services-htag{
     font-size: 2.5rem !important;
     font-weight: lighter !important;
+}
+
+
+.teacher-container{
+    width: 400px;
 }
