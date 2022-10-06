@@ -132,6 +132,16 @@ main{
     background-color: rgba(53, 39, 39, 0);
 }
 
+.testimonial:hover{
+    transition: all .5s ease-out;
+    transform: translateY(-20px);
+}
+
+
+.nav-link:hover{
+    opacity: 1 !important;
+}
+
 @media (max-width: 600px) {
     .teacher-container{
         width: 300px;
@@ -140,4 +150,10 @@ main{
     .extramoral{
         min-height: 100px;
     }
+}
+@media (min-width: 700px) {
+
+    .testimonial:nth-child(odd){
+        margin-top: 100px;
+    }    
 }
