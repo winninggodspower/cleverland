@@ -24,6 +24,19 @@
     font-family: inherit;
 }
 
+.overflow-y-hidden{
+    overflow-y: hidden;
+}
+
+.object-fit{
+    object-fit: cover;
+}
+
+.ratio-1x1{
+    aspect-ratio: 1/1 !important;
+    --bs-aspect-ratio: 100% !important;
+}
+
 header h2{
     font-family: 'Rubik Dirt', cursive;
 }
@@ -132,15 +145,13 @@ main{
     background-color: rgba(53, 39, 39, 0);
 }
 
-.testimonial:hover{
-    transition: all .5s ease-out;
-    transform: translateY(-20px);
-}
 
 
 .nav-link:hover{
     opacity: 1 !important;
 }
+
+
 
 @media (max-width: 600px) {
     .teacher-container{
@@ -155,5 +166,15 @@ main{
 
     .testimonial:nth-child(odd){
         margin-top: 100px;
-    }    
+    } 
+    
+    .testimonial:hover{
+        transition: all .5s ease-out;
+        transform: translateY(-20px);
+    }
+
+    footer #footer-logo{
+        width: 100% !important;
+    }
+    
 }
